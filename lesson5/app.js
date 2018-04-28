@@ -7,6 +7,7 @@
 //     处理url
 //     callback(null,返回url处理的)
 // }
+const zhihuUrl = "https://www.zhihu.com/";
 const async = require("async");
 // 并发连接数的计数器
 let concurrencyCount = 0;
