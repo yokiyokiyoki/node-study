@@ -20,7 +20,6 @@ describe("./main.test", () => {
       main.fibonacci(-1);
     }.should.throw("n should >= 0"));
   });
-
   it("should throw when n isnt Number", function() {
     (function() {
       main.fibonacci("我是字符串");
