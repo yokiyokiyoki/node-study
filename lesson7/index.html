@@ -26,6 +26,12 @@
   <script>mocha.setup('bdd');</script>
   <script src="tests.js"></script>
   <script>
+    if (window.initMochaPhantomJS) {
+      initMochaPhantomJS();
+      mocha.ui('bdd');
+      expect = chai.expect;
+    }
+
     mocha.run();
   </script>
 </body>
